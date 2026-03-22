@@ -1,37 +1,59 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
 *.egg-info/
 dist/
 build/
+*.egg
+
+# Virtual environments
 .venv/
 venv/
+ENV/
+
+# Poetry
+poetry.toml
+
+# Environment variables (NEVER commit secrets)
+.env
+.env.local
+.env.*.local
 
 # IDE
 .vscode/
 .idea/
-
-# Environment
-.env
-.env.local
-
-# Data
-data/*.json
-data/*.parquet
-!data/.gitkeep
-
-# Models
-models/
-*.bin
-*.safetensors
-
-# Reports
-reports/
-*.log
-
-# Docker
-.docker/
+*.swp
+*.swo
+*~
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# pytest
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# mypy
+.mypy_cache/
+
+# ruff
+.ruff_cache/
+
+# Data (large files)
+data/*.csv
+data/*.json
+data/*.parquet
+!data/.gitkeep
+
+# Logs
+*.log
+logs/
+GITIGNORE
